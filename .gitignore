@@ -1,0 +1,7 @@
+*.fits
+*.ecsv
+*.fits.gz
+.ipynb_checkpoints
+__pycache__
+configs.json
+*.asdf

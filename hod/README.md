@@ -1,0 +1,14 @@
+# Directory to run operations involving the entire AbacusHOD box
+
+1. Saving the catalog of a large grid of HODs. This is necessary for Monte-Carlo fits in the `mc` directory.
+   - `gal_asdf_many.sh`, `gal_asdf_ELG_many.sh` 
+2. Computing the real-space auto-clustering of a large grid of HODs
+   - `run_clustering_large_grid.sh`
+3. Saving the matter catalog of N-body boxes (`z = 2.5` and `3.0`). This is necessary for clustering measurements involving the matter field.
+   - `run_save_matter.sh`
+4. Compute the matter-spectra for N-body
+   - `run_clustering_mm.sh`
+5. Compute auto- and cross-spectra (in real- and redshift-space, and with and without ZCV) for best-fit HOD models determined from Monte-Carlo fits. 
+   - `run_clustering.sh`, `run_clustering_cross.sh`
+
+Code for perturbation theory fits to HOD clustering is in the `cobaya` subdirectory.
