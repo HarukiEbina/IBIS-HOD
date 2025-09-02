@@ -1,0 +1,123 @@
+theory:
+  camb:
+    extra_args:
+      num_massive_neutrinos: 1
+      omnuh2: 0.0006442
+      nnu: 3.046
+      tau: 0.0544
+      theta_H0_range:
+      - 20
+      - 100
+  likelihoods.fs_likelihood_lpt.PT_pk_theory:
+    zfid: 3
+    stop_at_error: true
+likelihood:
+  likelihoods.fs_likelihood_lpt.FSLikelihood:
+    zfid: 3
+    datfn: data/logM_cut_12.00_logM1_13.00_sigma_0.33_kappa_1.00_alpha_0.50_Acent_0.00_Bcent_0.00_Asat_0.00_Bsat_0.00_alpha_c_0.00_alpha_s_1.00_s_1.00_s_v_1.00_s_p_1.00_s_r_1.00_gg.json
+    stop_at_error: true
+params:
+  ns:
+    value: 0.9649
+  H0:
+    value: 67.36
+  ombh2:
+    value: 0.02237
+  omch2:
+    value: 0.12
+  As:
+    value: 2.083e-09
+    latex: A_\mathrm{s}
+  omegam:
+    latex: \Omega_\mathrm{m}
+  sigma8:
+    latex: \sigma_8
+  b1:
+    prior:
+      dist: uniform
+      min: -10
+      max: 10
+    ref:
+      dist: norm
+      loc: 0
+      scale: 0.05
+    latex: (b_1)
+  b2:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 15.0
+    ref:
+      dist: norm
+      loc: 0
+      scale: 0.5
+    latex: b_2
+  bs:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 15.0
+    ref:
+      dist: norm
+      loc: 1.0
+      scale: 0.5
+    latex: b_s
+  c1:
+    derived: 'lambda b1: b1+1'
+    drop: true
+  c2:
+    derived: 'lambda b2, b1: b2 + 8/21*(b1)'
+    drop: true
+  cs:
+    derived: 'lambda bs, b1: bs - 2/7*(b1)'
+    drop: true
+  alpha0:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 50.0
+    ref:
+      dist: norm
+      loc: -3.4
+      scale: 1.0
+    latex: \alpha_0
+  alpha2:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 50.0
+    ref:
+      dist: norm
+      loc: 0.0
+      scale: 2.0
+    latex: \alpha_2
+  SN0:
+    prior:
+      min: 0
+      max: 100000.0
+    ref:
+      dist: norm
+      loc: 333
+      scale: 50.0
+    latex: SN_0
+  SN2:
+    prior:
+      dist: norm
+      loc: 0.0
+      scale: 500000.0
+    ref:
+      dist: norm
+      loc: -400
+      scale: 10000.0
+    latex: SN_2
+sampler:
+  minimize:
+    ignore_prior: false
+    max_evals: 1000000
+    best_of: 16
+    confidence_for_unbounded: 0.9999995
+    seed: null
+output: output/hod/logM_cut_12.00_logM1_13.00_sigma_0.33_kappa_1.00_alpha_0.50_Acent_0.00_Bcent_0.00_Asat_0.00_Bsat_0.00_alpha_c_0.00_alpha_s_1.00_s_1.00_s_v_1.00_s_p_1.00_s_r_1.00
+timing: true
+stop_on_error: true
+debug: false

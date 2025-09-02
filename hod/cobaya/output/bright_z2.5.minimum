@@ -1,0 +1,29 @@
+ -log(Like) = 3520.1311470358132
+  chi-sq    = 7040.2622940716265
+
+    8  7.551970214e-01   b1                                                      (b_1)
+    9  4.066269549e-01   b2                                                      b_2
+   10  7.133982000e-01   bs                                                      b_s
+   14  -3.240926834e+00  alpha0                                                  \alpha_0
+   15  8.309717487e-03   alpha0_mm                                               \alpha_{0,mm}
+   16  -6.428256295e-01  alpha2                                                  \alpha_2
+   17  3.239356219e+01   SN0                                                     SN_0
+   18  2.537437016e+01   SN2                                                     SN_2
+   19  1.076232760e+01   SN0_gm                                                  SN_{0,gm}
+   20  1.893041050e+01   SN2_gm                                                  SN_{2,gm}
+
+    1  0.9649            ns                                                      ns
+    2  67.36             H0                                                      H0
+    3  0.02237           ombh2                                                   ombh2
+    4  0.12              omch2                                                   omch2
+    5  2.083e-09         As                                                      A_\mathrm{s}
+
+    6  3.151918680e-01   omegam                                                  \Omega_\mathrm{m}
+    7  8.077553304e-01   sigma8                                                  \sigma_8
+   11  1.755197021e+00   c1                                                      c1
+   12  6.943210583e-01   c2                                                      c2
+   13  4.976276224e-01   cs                                                      cs
+   21  1.124897424e+03   chi2__likelihoods.fs_likelihood_lpt.FSLikelihood        \chi^2_{\rm likelihoods.fs\ likelihood\ lpt.FSLikelihood}
+   22  1.192240644e+03   chi2__likelihoods.fs_likelihood_lpt_real.FSLikelihood   \chi^2_{\rm likelihoods.fs\ likelihood\ lpt\ real.FSLikelihood}
+   23  2.182483153e+03   chi2__likelihoods.fs_likelihood_lpt_mm.FSLikelihood     \chi^2_{\rm likelihoods.fs\ likelihood\ lpt\ mm.FSLikelihood}
+   24  2.390312609e+03   chi2__likelihoods.fs_likelihood_lpt_gm.FSLikelihood     \chi^2_{\rm likelihoods.fs\ likelihood\ lpt\ gm.FSLikelihood}

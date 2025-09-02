@@ -8,13 +8,7 @@ from matplotlib import pyplot as plt
 from scipy.interpolate import make_smoothing_spline
 
 import sys, os
-# basedir = "/pscratch/sd/h/hebina/AnalyzeLAE/mocks/"
-# for subdir in [""]:
-#     sys.path.append(basedir+subdir)
-basedir = "/pscratch/sd/h/hebina/AbacusLBG/"
-for subdir in ["",'ibis_tertiary44/LAE_auto_v2']:
-    sys.path.append(basedir+subdir)
-
+sys.path.append('..')
 from rotate_to import rotate_to
 from   fake_lbg import MockLBG
 from   calc_xi  import calc_xi
