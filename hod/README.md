@@ -1,5 +1,7 @@
 # Directory to run operations involving the entire AbacusHOD box
 
+## Procedure to generate the necessary data products for analysis
+### Note that if one only needs the final products, the existing .json files is sufficient. The only required step is to unzip the .json.gz files. 
 1. Save the catalog of a large grid of HODs. This is necessary for Monte-Carlo fits in the `mc` directory.
    - `gal_asdf_many.sh`, `gal_asdf_ELG_many.sh` 
 2. Compute the real-space auto-clustering of a large grid of HODs
@@ -12,3 +14,4 @@
    - `run_clustering.sh`, `run_clustering_cross.sh`, `run_clustering_ELG.sh`, `run_clustering_cross_ELG.sh`
 
 Code for perturbation theory fits to HOD clustering is in the `cobaya` subdirectory.
+Key figures using the entire simulation box are generated in `hod_zcv.ipynb`.
