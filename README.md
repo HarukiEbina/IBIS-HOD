@@ -6,4 +6,4 @@ The organization is as follows:
 - `hod` to run operations on the AbacusSummit HOD box
 - `mc` to run MC over iterated realizations of the observation, using the observation mask and random offsets on the HOD box
 
-The `Figures` directory contains all inputs to Figures in the paper, as well as the plotting notebook.
+The `Figures` directory contains all inputs to Figures in the paper.
